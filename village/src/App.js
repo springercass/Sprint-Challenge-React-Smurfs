@@ -35,11 +35,15 @@ class App extends Component {
     return (
       <div className="App">
         <nav className="nav">
-          <div>
-            <NavLink to="/">Home</NavLink>
+          <div className="navtext">
+            <NavLink to="/" className="navLink">
+              Home
+            </NavLink>
           </div>
-          <div>
-            <NavLink to="/SmurfForm">Add Smurf</NavLink>
+          <div className="navtext">
+            <NavLink to="/SmurfForm" className="navLink">
+              Add Smurf
+            </NavLink>
           </div>
         </nav>
         <Route
@@ -47,8 +51,8 @@ class App extends Component {
           path="/"
           render={props => (
             <div className="home">
-              <Smurfs {...props} smurfs={this.state.smurfs} />
               <SmurfForm {...props} addSmurf={this.addSmurf} />
+              <Smurfs {...props} smurfs={this.state.smurfs} />
             </div>
           )}
         />
