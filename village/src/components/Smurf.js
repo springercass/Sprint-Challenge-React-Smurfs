@@ -11,10 +11,10 @@ const Smurf = props => {
   );
 };
 
-Smurf.propTypes = {
-  name: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
-  age: PropTypes.number.isRequired
+Smurf.defaultProps = {
+  name: "",
+  height: "",
+  age: ""
 };
 
 export default Smurf;
