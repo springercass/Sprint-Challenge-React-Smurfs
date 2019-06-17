@@ -1,3 +1,86 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.nav {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  background: #88ccff;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+}
+
+.navtext {
+  margin: 3%;
+}
+.navLink {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navLink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.Smurf {
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  box-shadow: 0 15px 30px -12px #88ccff;
+  width: 40%;
+  margin: 3% auto;
+  background: #88ccff;
+}
+
+.Smurf h3 {
+  color: white;
+}
+
+.Smurf p {
+  color: white;
+  margin: 2% 0 3% 0;
+}
+
+.display {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Smurfs h1 {
+  border: 1px solid black;
+  width: 20%;
+  margin: 2% 0 2% 40%;
+  padding: 1%;
+}
+
+.SmurfForm {
+  width: 50%;
+  margin: auto;
+}
+
+.SmurfForm form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SmurfForm input {
+  margin: 2% 1%;
+}
+
+.SmurfForm button {
+  height: 25px;
+  margin: 2% 0;
+  background: black;
+  color: white;
+  border: none;
 }
